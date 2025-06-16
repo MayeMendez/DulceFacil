@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ServicioEntidad\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Confiteria.Dominio.Modelo\Confiteria.Dominio.Modelo.csproj" />
+    <ProjectReference Include="..\Confiteria.Dominio.Servicio\Confiteria.Dominio.Servicio.csproj" />
+    <ProjectReference Include="..\Confiteria.Infraestructura.AccesoDatos\Confiteria.Infraestructura.AccesoDatos.csproj" />
+    <ProjectReference Include="..\Confiteria.Infraestructura.Cross\Confiteria.Infraestructura.Cross.csproj" />
+    <ProjectReference Include="..\Confiteria.Infraestructura.ServEmail\Confiteria.Infraestructura.ServEmail.csproj" />
+    <ProjectReference Include="..\Confiteria.Infraestructura.ServExter\Confiteria.Infraestructura.ServExter.csproj" />
+  </ItemGroup>
+
+</Project>
