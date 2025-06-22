@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.WebAPI", "Confit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.Aplicacion", "Confiteria.Aplicacion\Confiteria.Aplicacion.csproj", "{1AD24D1D-FC56-4B02-999D-F7848034D5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.AplicacionDTO", "ConfiteriaAplicacionDTO\Confiteria.AplicacionDTO.csproj", "{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.Dominio.Modelo", "Confiteria.Dominio.Modelo\Confiteria.Dominio.Modelo.csproj", "{26568765-29C0-41D3-B054-285374554F2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.Dominio.Servicio", "Confiteria.Dominio.Servicio\Confiteria.Dominio.Servicio.csproj", "{A62ED198-8287-4531-A331-F4204DAA50F6}"
@@ -28,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.Infraestructura.ServEmail", "Confiteria.Infraestructura.ServEmail\Confiteria.Infraestructura.ServEmail.csproj", "{A092E856-C9D1-443E-8067-EA63826EEBB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.Infraestructura.ServExter", "Confiteria.Infraestructura.ServExter\Confiteria.Infraestructura.ServExter.csproj", "{2AF26BB1-3893-4238-B333-5F277CC05A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confiteria.AplicacionDTO", "Confiteria.AplicacionDTO\Confiteria.AplicacionDTO.csproj", "{127D910A-6ACB-42E3-A730-00AB01C3AE44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,6 @@ Global
 		{1AD24D1D-FC56-4B02-999D-F7848034D5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AD24D1D-FC56-4B02-999D-F7848034D5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AD24D1D-FC56-4B02-999D-F7848034D5F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26568765-29C0-41D3-B054-285374554F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26568765-29C0-41D3-B054-285374554F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26568765-29C0-41D3-B054-285374554F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,6 +67,10 @@ Global
 		{2AF26BB1-3893-4238-B333-5F277CC05A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF26BB1-3893-4238-B333-5F277CC05A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF26BB1-3893-4238-B333-5F277CC05A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{127D910A-6ACB-42E3-A730-00AB01C3AE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127D910A-6ACB-42E3-A730-00AB01C3AE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127D910A-6ACB-42E3-A730-00AB01C3AE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127D910A-6ACB-42E3-A730-00AB01C3AE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,12 +78,12 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ED8DC1C8-5FB2-49D6-B1CE-8C18DABE4569} = {00FDA172-7972-459D-A1E4-5977076B7C87}
 		{1AD24D1D-FC56-4B02-999D-F7848034D5F4} = {3524D571-51FD-4322-97DD-92F2955B9EF8}
-		{BFF62E5E-90A0-4BC9-877E-9D8DC7C5B351} = {3524D571-51FD-4322-97DD-92F2955B9EF8}
 		{26568765-29C0-41D3-B054-285374554F2D} = {8F86BF47-9102-4DB3-97DE-BB2FA0483E6C}
 		{A62ED198-8287-4531-A331-F4204DAA50F6} = {8F86BF47-9102-4DB3-97DE-BB2FA0483E6C}
 		{77CCAD30-59BB-4D95-92A2-6BFA121F9BFD} = {5F2D2126-3595-4616-A2C0-1CDB418D65E5}
 		{7E1DED87-C7A9-4C2E-B448-9C7CED356969} = {5F2D2126-3595-4616-A2C0-1CDB418D65E5}
 		{A092E856-C9D1-443E-8067-EA63826EEBB5} = {5F2D2126-3595-4616-A2C0-1CDB418D65E5}
 		{2AF26BB1-3893-4238-B333-5F277CC05A6B} = {5F2D2126-3595-4616-A2C0-1CDB418D65E5}
+		{127D910A-6ACB-42E3-A730-00AB01C3AE44} = {3524D571-51FD-4322-97DD-92F2955B9EF8}
 	EndGlobalSection
 EndGlobal
